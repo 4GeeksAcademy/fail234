@@ -1,7 +1,7 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			demo: [
+			book: [
 				{
 					title: "FIRST",
 					background: "white",
@@ -28,15 +28,15 @@ const getState = ({ getStore, getActions, setStore }) => {
 				//get the store
 				const store = getStore();
 
-				//we have to loop the entire demo array to look for the respective index
+				//we have to loop the entire book array to look for the respective index
 				//and change its color
-				const demo = store.demo.map((elm, i) => {
+				const book = store.book.map((elm, i) => {
 					if (i === index) elm.background = color;
 					return elm;
 				});
 
 				//reset the global store
-				setStore({ demo: demo });
+				setStore({ book: book });
 			}
 		}
 	};

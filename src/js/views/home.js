@@ -1,15 +1,24 @@
 import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
+import { Link } from "react-router-dom";
+import contactList from "../../img/contact-list.png";
 import "../../styles/home.css";
 
-export const Home = () => (
-	<div className="text-center mt-5">
-		<h1>Hello Rigo!</h1>
-		<p>
-			<img src={rigoImage} />
-		</p>
-		<a href="#" className="btn btn-success">
-			If you see this green button, bootstrap is working
-		</a>
-	</div>
-);
+export const Home = () => {
+
+	return (
+		<div className="text-center mt-4">
+			<h1>Contact List Manager</h1>
+			<p>
+				<img className="contactsBook" src={contactList} />
+			</p>
+			<div className="ml-auto">
+				<Link to="/book">
+					<button className="btn OpenContactsButton"
+					>Open your contacts book</button>
+				</Link>
+			</div>
+		</div>
+	);
+}
+
+

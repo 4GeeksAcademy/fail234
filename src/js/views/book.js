@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 
 import { Context } from "../store/appContext";
 
-import "../../styles/demo.css";
+import "../../styles/book.css";
 
-export const Demo = () => {
+export const Book = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
 		<div className="container">
 			<ul className="list-group">
-				{store.demo.map((item, index) => {
+				{store.book.map((item, index) => {
 					return (
 						<li
 							key={index}
