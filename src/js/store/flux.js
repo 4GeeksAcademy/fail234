@@ -5,7 +5,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				{
 					title: "FIRST",
 					background: "white",
-					initial: "white"
+					initial: "white",
 				},
 				{
 					title: "SECOND",
@@ -34,6 +34,17 @@ const getState = ({ getStore, getActions, setStore }) => {
 					if (i === index) elm.background = color;
 					return elm;
 				});
+
+				//reset the global store
+				setStore({ book: book });
+			},
+			handleForm: (e) => {
+				e.preventDefault()
+				const store = getStore();
+				const { fName, email, phone, address } = getStore();
+				const { register } = getActions();
+				register({ fName, email, phone, address }); // { fName: fName, email: email }
+				console.log("Enviando Formulario") //debugger
 
 				//reset the global store
 				setStore({ book: book });

@@ -1,0 +1,51 @@
+.title-AddANewContact {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container-form {
+    background-color: rgb(175, 178, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+}
+
+.form-card {
+    padding-top: 20px;
+}
+
+.container-input-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    /* Adjust the max-width of the container */
+    width: 100%;
+    padding: 20px;
+}
+
+.input-details {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    width: 500px;
+}
+
+.registerButton {
+    margin-top: 10px;
+    background-color: rgb(91, 64, 210);
+    color: white;
+}
+
+.registerButton:hover {
+    margin-top: 10px;
+    background-color: rgb(63, 36, 182);
+    color: white;
+}
+
+.linkBackToContacts {
+    margin-bottom: 20px;
+}
